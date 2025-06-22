@@ -24,6 +24,78 @@ public class E2ServerPlayerAuthority : ksServerEntityScript
     
     private uint m_OwnerId;
 
+    #region Weapon
+
+     [ksRPC(Consts.RPC.SPAWN_WEAPON)]
+    private void SpawnWeapon(int weaponIndex, int holsterIndex)
+    {
+        switch (holsterIndex)
+        {
+            case 0:
+                Properties[Consts.Prop.HOLSTER_WEAPON1] = weaponIndex;
+                break;
+            case 1:
+                Properties[Consts.Prop.HOLSTER_WEAPON2] = weaponIndex;
+                break;
+            case 2:
+                Properties[Consts.Prop.HOLSTER_WEAPON3] = weaponIndex;
+                break;
+            case 3:
+                Properties[Consts.Prop.HOLSTER_WEAPON4] = weaponIndex;
+                break;
+        }
+
+        Entity.Room.CallRPC(Consts.RPC.SPAWN_WEAPON, m_OwnerId, weaponIndex, holsterIndex);
+    }
+
+    [ksRPC(Consts.RPC.EQUIP_WEAPON)]
+    private void EquipWeapon(int previousHolsterIndex, int weaponIndex)
+    {
+        switch (previousHolsterIndex)
+        {
+            case 0:
+                Properties[Consts.Prop.HOLSTER_WEAPON1] = -1;
+                break;
+            case 1:
+                Properties[Consts.Prop.HOLSTER_WEAPON2] = -1;
+                break;
+            case 2:
+                Properties[Consts.Prop.HOLSTER_WEAPON3] = -1;
+                break;
+            case 3:
+                Properties[Consts.Prop.HOLSTER_WEAPON4] = -1;
+                break;
+        }
+        Properties[Consts.Prop.EQUIP_WEAPON] = weaponIndex;
+
+        Entity.Room.CallRPC(Consts.RPC.EQUIP_WEAPON, m_OwnerId, previousHolsterIndex, weaponIndex);
+    }
+
+    [ksRPC(Consts.RPC.UNEQUIP_WEAPON)]
+    private void UnequipWeapon(int previousHolsterIndex, int weaponIndex)
+    {
+        switch (previousHolsterIndex)
+        {
+            case 0:
+                Properties[Consts.Prop.HOLSTER_WEAPON1] = weaponIndex;
+                break;
+            case 1:
+                Properties[Consts.Prop.HOLSTER_WEAPON2] = weaponIndex;
+                break;
+            case 2:
+                Properties[Consts.Prop.HOLSTER_WEAPON3] = weaponIndex;
+                break;
+            case 3:
+                Properties[Consts.Prop.HOLSTER_WEAPON4] = weaponIndex;
+                break;
+        }
+        Properties[Consts.Prop.EQUIP_WEAPON] = -1;
+
+        Entity.Room.CallRPC(Consts.RPC.UNEQUIP_WEAPON, m_OwnerId, previousHolsterIndex, weaponIndex);
+    }
+
+    #endregion
+    
     [ksRPC(Consts.RPC.HEALTH_CHANGE)]
     private void SetHp(ksIServerPlayer player, uint ownerID, float hp)
     {

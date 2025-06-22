@@ -15,6 +15,8 @@ namespace E2MultiPlayer
         private Transform m_PlayerControl = null;
         public ProxyMove ProxyMove => m_ProxyMove;
         private PlayerMovementAdvanced m_AdvancedMove;
+        private WeaponProxy m_WeaponProxy;
+        public WeaponProxy WeaponProxy => m_WeaponProxy;
 
         private string m_InteractionColliderTag = "InteractionCollider";
         private string m_LeftHandColliderTag = "LeftHandCollider";
@@ -91,6 +93,9 @@ namespace E2MultiPlayer
                     m_CachedTransforms[m_InteractionColliderTag] = collider.transform;
                 }
             }
+
+            m_WeaponProxy = new WeaponProxy();
+            m_WeaponProxy.Initialize(m_PlayerControl, m_EntityScript);
         }
 
         public void BindColliderSync(E2ClientColliderSync sync)

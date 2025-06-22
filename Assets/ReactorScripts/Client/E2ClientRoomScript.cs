@@ -80,10 +80,79 @@ public class E2ClientRoomScript : ksRoomScript
                 
                 plAgent.ProxyMove.AddState(state);
             }
-            
-            
         }
     }
+    
+    #region Weapon
+    [ksRPC(Consts.RPC.SPAWN_WEAPON)]
+    void OnSpawnWeapon(uint ownerId,  int weaponIndex, int holsterIndex)
+    {
+        if (ownerId == Room.LocalPlayerId)
+        {
+            //return;
+        }
+       
+        Log.Info($"E2ClientRoomScript.OnSpawnWeapon {ownerId} {holsterIndex}");
+        var actor = ActorManager.Instance.GetActor(1000000);
+        if (null != actor)
+        {
+            var plAgent = actor as PlayerAgent;
+            plAgent.WeaponProxy.SpawnWeapon(weaponIndex, holsterIndex);
+        }
+    }
+
+    [ksRPC(Consts.RPC.EQUIP_WEAPON)]
+    void OnEquipWeapon(uint ownerId, int previousHolsterIndex, int weaponIndex)
+    {
+        if (ownerId == Room.LocalPlayerId)
+        {
+            //return;
+        }
+        
+        Log.Info($"E2ClientRoomScript.OnEquipWeapon {ownerId} {previousHolsterIndex}");
+        var actor = ActorManager.Instance.GetActor(1000000);
+        if (null != actor)
+        {
+            var plAgent = actor as PlayerAgent;
+            plAgent.WeaponProxy.EquipWeapon(previousHolsterIndex, weaponIndex);
+        }
+        
+    }
+
+    [ksRPC(Consts.RPC.UNEQUIP_WEAPON)]
+    void OnUnequipWeapon(uint ownerId, int previousHolsterIndex, int weaponIndex)
+    {
+        if (ownerId == Room.LocalPlayerId)
+        {
+            //return;
+        }
+        
+        Log.Info($"E2ClientRoomScript.OnUnequipWeapon {ownerId} {previousHolsterIndex} {weaponIndex}");
+        var actor = ActorManager.Instance.GetActor(1000000);
+        if (null != actor)
+        {
+            var plAgent = actor as PlayerAgent;
+            plAgent.WeaponProxy.UnequipWeapon(previousHolsterIndex, weaponIndex);
+        }
+
+    }
+
+    [ksRPC(Consts.RPC.WEAPON_SOUND)]
+    void OnPlaySound(uint ownerId, int soundID)
+    {
+        if (ownerId == Room.LocalPlayerId)
+        {
+            //return;
+        }
+        Log.Info($"E2ClientRoomScript.OnUnequipWeapon {ownerId} {soundID}");
+        var actor = ActorManager.Instance.GetActor(1000000);
+        if (null != actor)
+        {
+            var plAgent = actor as PlayerAgent;
+            plAgent.WeaponProxy.PlayWeaponSound(soundID);
+        }
+    }
+    #endregion
 
     // collect player input 
     [ksRPC(Consts.RPC.PlayerInput)]

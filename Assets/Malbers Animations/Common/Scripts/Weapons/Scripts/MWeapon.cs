@@ -87,7 +87,7 @@ namespace MalbersAnimations.Weapons
 
         ///// <summary> Sets if the weapon is stored in a holster or not  </summary>
         //public bool InHolster { get; set; }
-
+        public UnityEvent<int> OnPlaySound;
         //public Sprite UISprite { get => m_UI; set => m_UI = value; }
 
         #region Aiming
@@ -622,6 +622,7 @@ namespace MalbersAnimations.Weapons
             {
                 var newSound = Sounds[ID];
                 PlaySound(newSound);
+                OnPlaySound?.Invoke(ID);
             }
         }
 

@@ -27,6 +27,7 @@ public class E2ClientAuthority : ksEntityScript
     public uint OwnerID => m_OwnerID;
     private Consts.EntityType m_EntityType;
     private uint m_BuddyPlayerID = 0;
+    private WeaponProxy m_ProxyWeapon;
 
     // Called after properties are initialized.
     public override void Attached()
@@ -79,6 +80,7 @@ public class E2ClientAuthority : ksEntityScript
             }
             
         }
+        
     }
         
     // Called when the script is detached.
@@ -86,12 +88,21 @@ public class E2ClientAuthority : ksEntityScript
     {
             
     }
-        
-    // Called every frame.
-    private void Update()
+
+    private void InitWeaponProxy()
     {
-            
+        var actor = ActorManager.Instance.GetActor(m_OwnerID);
+        if (null != actor)
+        {
+            var plAgent = actor as PlayerAgent;
+            if (null != plAgent)
+            {
+                m_ProxyWeapon = plAgent.WeaponProxy;
+            }
+        }
     }
+        
+
         
     /// <summary>
     /// Sync Position and Rotation to Server
