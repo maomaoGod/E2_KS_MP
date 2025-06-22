@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2697165195691113107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6724005678019812602}
+  - component: {fileID: 2712862616181654440}
+  - component: {fileID: 5711428681518720126}
+  - component: {fileID: 892941986981949606}
+  - component: {fileID: -8743863600208991911}
+  - component: {fileID: 5391661361751593157}
+  - component: {fileID: 939053159164836444}
+  - component: {fileID: -5024499158921973747}
+  m_Layer: 0
+  m_Name: AvatarSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6724005678019812602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2712862616181654440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee06f2f9480b8674880fcaa5a0eaa08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyWithServer: 1
+  m_isPermanent: 1
+  SyncGroup: 0
+  CollisionFilter: {fileID: 0}
+  PhysicsMaterial: {fileID: 0}
+  OverridePredictor: 0
+  Predictor: {fileID: 0}
+  OverrideControllerPredictor: 0
+  ControllerPredictor: {fileID: 0}
+  ColliderData: []
+  RigidBodyExistance: 0
+  PhysicsOverrides:
+    ContactOffset: -1
+    SleepThreshold: -1
+    MaxLinearSpeed: -1
+    MaxAngularSpeed: -1
+    MaxDepenetrationSpeed: -1
+    PositionIterations: -1
+    VelocityIterations: -1
+    m_rigidBodyMode: -1
+  TransformPrecisionOverrides:
+    Position: -1
+    Rotation: -1
+    Scale: -1
+  AssetId: 17
+  EntityId: 0
+  Type: AvatarSpawner
+  IsStatic: 1
+--- !u!114 &5711428681518720126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc7e8a55ffaab3428566c1fb5e35599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &892941986981949606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6431ca2a378d79949a56c4e9d90e7094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Earth2_Avatar_Storage: {fileID: 11400000, guid: 07d8fce8e0856d841b793958a8e68d7c, type: 2}
+  aStarGridGraph: {fileID: 741565501779971086, guid: f02efcb1669670c4795851b9a2f3ca2b, type: 3}
+  proceduralGraph: {fileID: 5283995450123795179, guid: ee9807e1538166b479081743c21cc4c4, type: 3}
+  avatarAuthority: {fileID: 5711428681518720126}
+  m_rootControlledObject: {fileID: 0}
+--- !u!114 &-8743863600208991911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20927ce0ad50d8d4bb92bbe1327b1b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5391661361751593157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2c2c62bb91a6a41af18cd5520ef2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ceClientAuthority>k__BackingField: {fileID: 892941986981949606}
+  <CrossFadeDuration>k__BackingField: 0.2
+  m_animator: {fileID: 0}
+--- !u!114 &939053159164836444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6224693691e149439cfaeb7aa836c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectionDuration: 0.3333333
+--- !u!114 &-5024499158921973747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697165195691113107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a819f480cff0024abdc6b3f646e5439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ceClientAuthority>k__BackingField: {fileID: 892941986981949606}
+  <UpdatePerSecond>k__BackingField: 60
+  rotationSyncObjectT: {fileID: 0}
+  positionSyncObjectT: {fileID: 0}

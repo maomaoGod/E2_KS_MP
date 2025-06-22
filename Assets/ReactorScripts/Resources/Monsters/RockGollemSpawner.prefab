@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7727817663665993499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8913646186220825972}
+  - component: {fileID: 761184148695986524}
+  - component: {fileID: 3283771722109508088}
+  - component: {fileID: 9078952898113947042}
+  - component: {fileID: -2516070935362228427}
+  - component: {fileID: -7098626468572836784}
+  - component: {fileID: 2637253620948643757}
+  - component: {fileID: -9200739594526086988}
+  m_Layer: 0
+  m_Name: RockGollemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8913646186220825972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &761184148695986524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee06f2f9480b8674880fcaa5a0eaa08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyWithServer: 1
+  m_isPermanent: 1
+  SyncGroup: 0
+  CollisionFilter: {fileID: 0}
+  PhysicsMaterial: {fileID: 0}
+  OverridePredictor: 0
+  Predictor: {fileID: 0}
+  OverrideControllerPredictor: 0
+  ControllerPredictor: {fileID: 0}
+  ColliderData: []
+  RigidBodyExistance: 0
+  PhysicsOverrides:
+    ContactOffset: -1
+    SleepThreshold: -1
+    MaxLinearSpeed: -1
+    MaxAngularSpeed: -1
+    MaxDepenetrationSpeed: -1
+    PositionIterations: -1
+    VelocityIterations: -1
+    m_rigidBodyMode: -1
+  TransformPrecisionOverrides:
+    Position: -1
+    Rotation: -1
+    Scale: -1
+  AssetId: 21
+  EntityId: 0
+  Type: MonsterSpawner
+  IsStatic: 1
+--- !u!114 &3283771722109508088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ff87b79adb4a24e9d31ea6d784a344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9078952898113947042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4dee26fd38760d47aa2666ac4c07b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatar_local_prefab: {fileID: 5061511065246909045, guid: 64fd86482116c38438dc2a1951ee9dc3, type: 3}
+  avatar_remote_prefab: {fileID: 8282469909496655213, guid: f52774086fcf31f45a8a6bb7986542ef, type: 3}
+  RootControlledObject: {fileID: 0}
+  m_controlledObject: {fileID: 0}
+--- !u!114 &-2516070935362228427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8eaf12657d3fcf4b8bd24a231db5941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7098626468572836784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65031dee523139242bb35029a1fc4e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ceClientAuthority>k__BackingField: {fileID: 9078952898113947042}
+  <CrossFadeDuration>k__BackingField: 0.2
+--- !u!114 &2637253620948643757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc761b72f629e03478d9f2353c2f7957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectionDuration: 0.3333333
+--- !u!114 &-9200739594526086988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727817663665993499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101974e631a9d3e4bb00221277930adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ceClientAuthority>k__BackingField: {fileID: 9078952898113947042}
+  rotationSyncObjectT: {fileID: 0}
+  positionSyncObjectT: {fileID: 0}
+  puppetMaster: {fileID: 0}

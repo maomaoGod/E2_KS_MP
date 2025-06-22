@@ -1,0 +1,18 @@
+2025-06-18 00:33:27.9998 [INFO; Root]  KinematicSoup Technologies Inc.
+2025-06-18 00:33:28.0084 [INFO; Root]  Reactor Server 1.1.0b
+2025-06-18 00:33:28.1381 [DEBUG; Root]  Loading Asset Scripts
+2025-06-18 00:33:28.1432 [DEBUG; Root]  Loading Room Configs
+2025-06-18 00:33:28.1562 [DEBUG; Root]  Initializing PhysX
+2025-06-18 00:33:28.1868 [DEBUG; Root]  Loading PhysX geometry
+2025-06-18 00:33:28.1944 [INFO; Root]  Loaded 3 geometries
+2025-06-18 00:33:28.1944 [WARNING; System.Type]  Unable to locate geometry file geometry.1 - PlayGround Human (1 - Holsters).dat
+2025-06-18 00:33:28.1944 [DEBUG; Root]  Loading entity prefabs
+2025-06-18 00:33:28.2087 [INFO; Root]  Loaded 16 entity prefabs
+2025-06-18 00:33:28.2087 [DEBUG; Root]  Loading entity instances
+2025-06-18 00:33:28.2137 [DEBUG; Root]  Initializing scripts
+2025-06-18 00:33:28.2282 [DEBUG; Root]  Room setup complete
+2025-06-18 00:33:28.2288 [INFO; Reactor.ServerRoom]  Starting room 1
+2025-06-18 00:33:28.2288 [INFO; Root]  Sending client updates every 2 frames
+2025-06-18 00:33:28.2288 [INFO; Root]  Attempting to sync simulation time to match elapsed time.
+2025-06-18 00:33:28.2288 [INFO; Root]  Opening TCP port 8000
+2025-06-18 00:33:28.2303 [INFO; Root]  Opening RUDP port 8000

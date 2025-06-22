@@ -1,0 +1,413 @@
+{
+	"entities": {
+		"AvatarSpawner": [
+			{
+				"asset id": 17,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerAvatarAuthority"
+					},
+					{
+						"name": "ServerAvatarAnimationSync"
+					},
+					{
+						"name": "ServerAvatarTransformSync"
+					}
+				]
+			}
+		],
+		"BoatSpawner": [
+			{
+				"asset id": 18,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerBoatAuthority"
+					},
+					{
+						"name": "ServerBoatTransformSync"
+					}
+				]
+			}
+		],
+		"BulletSpawner": [
+			{
+				"asset id": 36,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksBoxCollider",
+						"params": {
+							"shape id": 2,
+							"material": null,
+							"filter": null,
+							"offset": [
+								-0.01492835,
+								-0.01330765,
+								0.0
+							],
+							"trigger flag": false,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					},
+					{
+						"name": "E2ServerBulletAuthority"
+					}
+				]
+			}
+		],
+		"CarSpawner": [
+			{
+				"asset id": 15,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerCarAuthority"
+					},
+					{
+						"name": "ServerCarTransformSync"
+					}
+				]
+			}
+		],
+		"CydroidSpawner": [
+			{
+				"asset id": 16,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerCydroidAuthority"
+					},
+					{
+						"name": "ServerCydroidTransformSync"
+					}
+				]
+			}
+		],
+		"E-therSpawner": [
+			{
+				"asset id": 20,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerEtherAuthority"
+					},
+					{
+						"name": "ServerEtherTransformSync"
+					}
+				]
+			}
+		],
+		"MentarSpawner": [
+			{
+				"asset id": 25,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerMentarAuthority"
+					}
+				]
+			}
+		],
+		"Monsters/BigRockGollemSpawner": [
+			{
+				"asset id": 34,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerMonsterAuthority"
+					},
+					{
+						"name": "ServerMonsterAnimationSync"
+					},
+					{
+						"name": "ServerMonsterTransformSync"
+					}
+				]
+			}
+		],
+		"Monsters/RockGollemSpawner": [
+			{
+				"asset id": 21,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerMonsterAuthority"
+					},
+					{
+						"name": "ServerMonsterAnimationSync"
+					},
+					{
+						"name": "ServerMonsterTransformSync"
+					}
+				]
+			}
+		],
+		"Monsters/SkeletonSpawner": [
+			{
+				"asset id": 23,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerMonsterAuthority"
+					},
+					{
+						"name": "ServerMonsterAnimationSync"
+					},
+					{
+						"name": "ServerMonsterTransformSync"
+					}
+				]
+			}
+		],
+		"Monsters/ZombieSpawner": [
+			{
+				"asset id": 24,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerMonsterAuthority"
+					},
+					{
+						"name": "ServerMonsterAnimationSync"
+					},
+					{
+						"name": "ServerMonsterTransformSync"
+					}
+				]
+			}
+		],
+		"NPCSpawner": [
+			{
+				"asset id": 37,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksCapsuleCollider",
+						"params": {
+							"shape id": 1,
+							"material": null,
+							"filter": null,
+							"offset": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"trigger flag": false,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					},
+					{
+						"name": "E2ServerNPCAuthority"
+					}
+				]
+			}
+		],
+		"PlayerSpawner": [
+			{
+				"asset id": 38,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksCapsuleCollider",
+						"params": {
+							"shape id": 3,
+							"material": null,
+							"filter": null,
+							"offset": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"trigger flag": false,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					},
+					{
+						"name": "E2ServerPlayerAuthority"
+					}
+				]
+			}
+		],
+		"Projectiles/BulletProjectileSpawner": [
+			{
+				"asset id": 35,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerProjectileAuthority"
+					},
+					{
+						"name": "ServerProjectileTransformSync"
+					}
+				]
+			}
+		],
+		"Projectiles/MagicProjectileSpawner": [
+			{
+				"asset id": 31,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerProjectileAuthority"
+					},
+					{
+						"name": "ServerProjectileTransformSync"
+					}
+				]
+			}
+		],
+		"VFXs/SkyFallSpawner": [
+			{
+				"asset id": 32,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": "ServerVFXAuthority"
+					}
+				]
+			}
+		]
+	},
+	"assets": {
+		"Malbers Animations/Common/Physic Materials/Climbable": {
+			"asset id": 1,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 50.0,
+				"DynamicFriction": 0.0,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 1,
+				"RestitutionCombineMode": 1
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Dirt": {
+			"asset id": 2,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Flesh": {
+			"asset id": 3,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.0,
+				"DynamicFriction": 0.0,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 1,
+				"RestitutionCombineMode": 1
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Metal": {
+			"asset id": 4,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Ragdoll": {
+			"asset id": 5,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.3,
+				"DynamicFriction": 0.3,
+				"Restitution": 0.1,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Sand": {
+			"asset id": 6,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Stone": {
+			"asset id": 7,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.2,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Water": {
+			"asset id": 8,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Wheel": {
+			"asset id": 9,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.3,
+				"DynamicFriction": 1.0,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 1
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/Wood": {
+			"asset id": 10,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 1
+			}
+		},
+		"Malbers Animations/Common/Physic Materials/ZeroFriction": {
+			"asset id": 11,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 50.0,
+				"DynamicFriction": 0.0,
+				"Restitution": 0.0,
+				"FrictionCombineMode": 1,
+				"RestitutionCombineMode": 1
+			}
+		},
+		"Smooth Sync/Common/Example Scene Resources/Bouncy 3D": {
+			"asset id": 12,
+			"name": ".ksPhysicsMaterial",
+			"fields": {
+				"StaticFriction": 0.6,
+				"DynamicFriction": 0.6,
+				"Restitution": 0.8,
+				"FrictionCombineMode": 0,
+				"RestitutionCombineMode": 0
+			}
+		}
+	}
+}

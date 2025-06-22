@@ -1,0 +1,22 @@
+2025-06-17 21:36:50.1292 [INFO; Root]  KinematicSoup Technologies Inc.
+2025-06-17 21:36:50.1378 [INFO; Root]  Reactor Server 1.1.0b
+2025-06-17 21:36:51.2743 [DEBUG; Root]  Loading Asset Scripts
+2025-06-17 21:36:51.2794 [DEBUG; Root]  Loading Room Configs
+2025-06-17 21:36:51.2924 [DEBUG; Root]  Initializing PhysX
+2025-06-17 21:36:51.3374 [DEBUG; Root]  Loading PhysX geometry
+2025-06-17 21:36:51.3432 [INFO; Root]  Loaded 3 geometries
+2025-06-17 21:36:51.3432 [WARNING; System.Type]  Unable to locate geometry file geometry.1 - PlayGround Human (1 - Holsters).dat
+2025-06-17 21:36:51.3432 [DEBUG; Root]  Loading entity prefabs
+2025-06-17 21:36:51.3601 [INFO; Root]  Loaded 16 entity prefabs
+2025-06-17 21:36:51.3601 [DEBUG; Root]  Loading entity instances
+2025-06-17 21:36:51.3646 [DEBUG; Root]  Initializing scripts
+2025-06-17 21:36:51.3696 [DEBUG; Root]  Room setup complete
+2025-06-17 21:36:51.3701 [INFO; Reactor.ServerRoom]  Starting room 1
+2025-06-17 21:36:51.3707 [INFO; Root]  Sending client updates every 2 frames
+2025-06-17 21:36:51.3707 [INFO; Root]  Attempting to sync simulation time to match elapsed time.
+2025-06-17 21:36:51.3717 [INFO; Root]  Opening TCP port 8000
+2025-06-17 21:36:51.3727 [INFO; Root]  Opening RUDP port 8000
+2025-06-17 21:37:08.4006 [INFO; Root]  Client(id = 1, address = 127.0.0.1:51217) connected
+2025-06-17 21:37:08.4094 [DEBUG; Root]  Client(id = 1, address = 127.0.0.1:51217) model validated
+2025-06-17 21:37:08.4486 [INFO; Authentication]  Client(id = 1, address = 127.0.0.1) authenticated.
+2025-06-17 21:37:37.6023 [INFO; Root]  Client(id = 1, address = 127.0.0.1:51217) disconnected: 108-connection reset

@@ -1,0 +1,28 @@
+1|*Malbers Animations/Common/Physic Materials/Climbable
+2|*Malbers Animations/Common/Physic Materials/Dirt
+3|*Malbers Animations/Common/Physic Materials/Flesh
+4|*Malbers Animations/Common/Physic Materials/Metal
+5|*Malbers Animations/Common/Physic Materials/Ragdoll
+6|*Malbers Animations/Common/Physic Materials/Sand
+7|*Malbers Animations/Common/Physic Materials/Stone
+8|*Malbers Animations/Common/Physic Materials/Water
+9|*Malbers Animations/Common/Physic Materials/Wheel
+10|*Malbers Animations/Common/Physic Materials/Wood
+11|*Malbers Animations/Common/Physic Materials/ZeroFriction
+12|*Smooth Sync/Common/Example Scene Resources/Bouncy 3D
+17|AvatarSpawner
+18|BoatSpawner
+36|BulletSpawner
+15|CarSpawner
+16|CydroidSpawner
+20|E-therSpawner
+25|MentarSpawner
+34|Monsters/BigRockGollemSpawner
+21|Monsters/RockGollemSpawner
+23|Monsters/SkeletonSpawner
+24|Monsters/ZombieSpawner
+37|NPCSpawner
+38|PlayerSpawner
+35|Projectiles/BulletProjectileSpawner
+31|Projectiles/MagicProjectileSpawner
+32|VFXs/SkyFallSpawner
