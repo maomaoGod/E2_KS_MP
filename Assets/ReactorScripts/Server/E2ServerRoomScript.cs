@@ -88,6 +88,18 @@ public class E2ServerRoomScript : ksServerRoomScript
     {
         
     }
+
+    private void InitPlayerCollider(string colliderName,ksIServerPlayer serverPlayer)
+    {
+        var playerincCol = Room.SpawnEntity(colliderName);
+        E2ServerColliderAuthority serverCollider = playerincCol.Scripts.Get<E2ServerColliderAuthority>();
+        if (serverCollider == null)
+        {
+            serverCollider = new E2ServerColliderAuthority();
+            playerincCol.Scripts.Attach(serverCollider);
+        }
+        serverCollider.Owner = serverPlayer.Id;
+    }
     
     // Called when a player connects.
     private void PlayerJoin(ksIServerPlayer player)
@@ -107,6 +119,11 @@ public class E2ServerRoomScript : ksServerRoomScript
             playerEntiry.Scripts.Attach(serverAuthority);
         }
         serverAuthority.Owner = player.Id;
+        
+        InitPlayerCollider("Player_Interactions_Collider",player);
+        InitPlayerCollider("Player_LHand_Collider",player);
+        InitPlayerCollider("Player_RHand_Collider",player);
+        
         
          ksIServerEntity playerFollow = Room.SpawnEntity("PlayerSpawner");
          // owner is remote client

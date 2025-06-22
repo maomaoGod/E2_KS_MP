@@ -22,6 +22,10 @@
 23|Monsters/SkeletonSpawner
 24|Monsters/ZombieSpawner
 37|NPCSpawner
+13|Player_Interactions_Collider
+14|Player_LHand_Collider
+19|Player_RHand_Collider
+22|Player_RKick_Collider
 38|PlayerSpawner
 35|Projectiles/BulletProjectileSpawner
 31|Projectiles/MagicProjectileSpawner

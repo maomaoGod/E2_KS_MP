@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">LocalDebug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{f7d04110-7eb7-421d-aa89-77fa42cb38a2}</ProjectGuid>
+    <ProjectGuid>{6053303e-ed24-4d22-8fdb-fff18598ed56}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KSServerRuntime</RootNamespace>
@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="..\Common\Const.cs" />
     <Compile Include="E2ServerBulletAuthority.cs" />
+    <Compile Include="E2ServerColliderAuthority.cs" />
     <Compile Include="E2ServerNPCAuthority.cs" />
     <Compile Include="E2ServerPlayerAuthority.cs" />
     <Compile Include="E2ServerPropAuthority.cs" />

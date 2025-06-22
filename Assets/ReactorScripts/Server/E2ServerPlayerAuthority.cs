@@ -44,7 +44,7 @@ public class E2ServerPlayerAuthority : ksServerEntityScript
                 et.Transform.Position = position + new ksVector3(0.0F, 2.2F, 0.0F);
                 et.Transform.Rotation = rotation;
                 var svr = et.Scripts.Get<E2ServerPlayerAuthority>();
-                ksLog.Info($"E2ServerPlayerAuthority.SetTransfrom {svr.Owner} {et.Transform.Position}");
+                //ksLog.Info($"E2ServerPlayerAuthority.SetTransfrom {svr.Owner} {et.Transform.Position}");
                 Entity.Room.CallRPC(Consts.RPC.TRANSFORM_RESPONSE, ownerID,et.Transform.Position, rotation, timeStamp);
             }
         }

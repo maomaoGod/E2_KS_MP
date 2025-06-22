@@ -208,6 +208,109 @@
 				]
 			}
 		],
+		"Player_Interactions_Collider": [
+			{
+				"asset id": 13,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksBoxCollider",
+						"params": {
+							"shape id": 4,
+							"material": null,
+							"filter": null,
+							"offset": [
+								0.0,
+								0.75,
+								0.0
+							],
+							"trigger flag": true,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					},
+					{
+						"name": "E2ServerColliderAuthority"
+					}
+				]
+			}
+		],
+		"Player_LHand_Collider": [
+			{
+				"asset id": 14,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksBoxCollider",
+						"params": {
+							"shape id": 5,
+							"material": null,
+							"filter": null,
+							"offset": [
+								-0.3775494,
+								3.571892E-10,
+								-1.353645E-07
+							],
+							"trigger flag": true,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					}
+				]
+			}
+		],
+		"Player_RHand_Collider": [
+			{
+				"asset id": 19,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksBoxCollider",
+						"params": {
+							"shape id": 6,
+							"material": null,
+							"filter": null,
+							"offset": [
+								-0.35,
+								0.0,
+								0.0
+							],
+							"trigger flag": true,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					}
+				]
+			}
+		],
+		"Player_RKick_Collider": [
+			{
+				"asset id": 22,
+				"is permanent": 1,
+				"scripts": [
+					{
+						"name": ".ksBoxCollider",
+						"params": {
+							"shape id": 7,
+							"material": null,
+							"filter": null,
+							"offset": [
+								-0.3,
+								0.03084142,
+								1.439514E-10
+							],
+							"trigger flag": true,
+							"simulation flag": true,
+							"query flag": true,
+							"enabled": true
+						}
+					}
+				]
+			}
+		],
 		"PlayerSpawner": [
 			{
 				"asset id": 38,

@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using MalbersAnimations;
 using UnityEngine;
 
@@ -14,8 +15,16 @@ namespace E2MultiPlayer
         private Transform m_PlayerControl = null;
         public ProxyMove ProxyMove => m_ProxyMove;
         private PlayerMovementAdvanced m_AdvancedMove;
+
+        private string m_InteractionColliderTag = "InteractionCollider";
+        private string m_LeftHandColliderTag = "LeftHandCollider";
+        private string m_RightHandColliderTag = "RightHandCollider";
+        
+        private Dictionary<string,Transform> m_CachedTransforms = new Dictionary<string, Transform>();
+        private Dictionary<Transform,E2ClientColliderSync> m_Sourc2Target = new  Dictionary<Transform,E2ClientColliderSync>();
         public override void Bind(GameObject controller,GameObject syncTarget)
         {
+            m_CachedTransforms.Clear();
             m_InputData = new PlayerInputData();
             //m_Controller.Initialize();
             m_SyncTarget = syncTarget;
@@ -67,8 +76,46 @@ namespace E2MultiPlayer
             
             m_ProxyMove = new  ProxyMove();
             m_ProxyMove.Initialize(m_PlayerControl.transform,m_EntityScript);
+
+            var colliders = m_PlayerControl.gameObject.GetComponentsInChildren<Collider>(true);
+            foreach (var collider in colliders)
+            {
+                if (collider.CompareTag(m_LeftHandColliderTag))
+                {
+                    m_CachedTransforms[m_LeftHandColliderTag] = collider.transform;
+                }else if (collider.CompareTag(m_RightHandColliderTag))
+                {
+                    m_CachedTransforms[m_RightHandColliderTag] = collider.transform;
+                }else if (collider.CompareTag(m_InteractionColliderTag))
+                {
+                    m_CachedTransforms[m_InteractionColliderTag] = collider.transform;
+                }
+            }
         }
 
+        public void BindColliderSync(E2ClientColliderSync sync)
+        {
+            if (null == sync)
+            {
+                Log.Error("PlayerAgent.BindColliderSync called with a null syncTarget");
+                return;
+            }
+            
+            var syncTag = sync.gameObject.tag;
+            if (m_CachedTransforms.TryGetValue(syncTag, out Transform transform))
+            {
+                if (m_Sourc2Target.ContainsKey(transform))
+                {
+                    Log.Error($"PlayerAgent.BindColliderSync called with a duplicate syncTarget {syncTag}");
+                }
+                m_Sourc2Target[transform] = sync;
+            }
+            else
+            {
+                Log.Error($"PlayerAgent.BindColliderSync called with a non-existing transform {syncTag}");
+            }
+        }
+        
         public override void Update(float dtTime)
         {
             if (!m_bIsCreated)
@@ -129,6 +176,17 @@ namespace E2MultiPlayer
                         m_SyncTarget.transform.rotation = m_PlayerControl.transform.rotation;   
                         
                         m_ProxyMove.SmoothSyncUpdate(dtTime,true);
+
+                        foreach (var kv in m_Sourc2Target)
+                        {
+                            var entityId = kv.Value.Entity.Id;
+                            kv.Value.transform.position = kv.Key.position;
+                            kv.Value.transform.rotation = kv.Key.rotation;
+                            kv.Value.transform.localScale = kv.Key.lossyScale;
+                            
+                            kv.Value.Entity.CallRPC(Consts.RPC.TRANSFORM_COLLIDER, entityId, m_EntityScript.OwnerId ,  kv.Key.position , kv.Key.rotation,
+                                    kv.Key.lossyScale);
+                        }
                     }
                     else
                     {

@@ -10,6 +10,9 @@ TagManager:
   - Fly
   - Animal
   - Water
+  - InteractionCollider
+  - LeftHandCollider
+  - RightHandCollider
   layers:
   - Default
   - TransparentFX

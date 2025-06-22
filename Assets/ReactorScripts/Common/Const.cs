@@ -26,6 +26,7 @@ public class Consts
             public const uint ANIMATION_PARAM = 14;
             public const uint ANIMATION_TRIGGER = 15;
             public const uint TRANSFORM_RESPONSE = 16;
+            public const uint TRANSFORM_COLLIDER = 17;
 
         //---------------------Building RPC Consts-----------------------//
             public const uint SPAWN_BUILDING_SERVER = 18;
@@ -184,7 +185,8 @@ public class Consts
         E_Entity_Player,
         E_Entity_NPC,
         E_Entity_Bullet,
-        E_Entity_FollowPlayer
+        E_Entity_FollowPlayer,
+        E_Entity_Collider
     }
 
     public enum BulletTrack

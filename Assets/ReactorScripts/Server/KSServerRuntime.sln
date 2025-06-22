@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSServerRuntime", "KSServerRuntime.csproj", "{f7d04110-7eb7-421d-aa89-77fa42cb38a2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSServerRuntime", "KSServerRuntime.csproj", "{6053303e-ed24-4d22-8fdb-fff18598ed56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
         OnlineRelease|Any CPU = OnlineRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.LocalDebug|Any CPU.ActiveCfg = LocalDebug|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.LocalDebug|Any CPU.Build.0 = LocalDebug|Any CPU
-        {f7d04110-7eb7-421d-aa89-77fa42cb38a2}.LocalRelease|Any CPU.ActiveCfg = LocalRelease|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.LocalRelease|Any CPU.Build.0 = LocalRelease|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.OnlineDebug|Any CPU.ActiveCfg = OnlineDebug|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.OnlineDebug|Any CPU.Build.0 = OnlineDebug|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.OnlineRelease|Any CPU.ActiveCfg = OnlineRelease|Any CPU
-		{f7d04110-7eb7-421d-aa89-77fa42cb38a2}.OnlineRelease|Any CPU.Build.0 = OnlineRelease|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.LocalDebug|Any CPU.ActiveCfg = LocalDebug|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.LocalDebug|Any CPU.Build.0 = LocalDebug|Any CPU
+        {6053303e-ed24-4d22-8fdb-fff18598ed56}.LocalRelease|Any CPU.ActiveCfg = LocalRelease|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.LocalRelease|Any CPU.Build.0 = LocalRelease|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.OnlineDebug|Any CPU.ActiveCfg = OnlineDebug|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.OnlineDebug|Any CPU.Build.0 = OnlineDebug|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.OnlineRelease|Any CPU.ActiveCfg = OnlineRelease|Any CPU
+		{6053303e-ed24-4d22-8fdb-fff18598ed56}.OnlineRelease|Any CPU.Build.0 = OnlineRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
