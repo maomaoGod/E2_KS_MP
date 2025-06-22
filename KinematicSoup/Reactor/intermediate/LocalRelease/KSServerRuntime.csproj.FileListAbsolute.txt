@@ -19,3 +19,10 @@ C:\Users\nwjxz\Documents\workspace\E2-KS-MP-SmoothSync\KinematicSoup\Reactor\int
 C:\Users\nwjxz\Documents\workspace\E2-KS-MP-SmoothSync\KinematicSoup\Reactor\intermediate\LocalRelease\KSServer.8C2C61C2.Up2Date
 C:\Users\nwjxz\Documents\workspace\E2-KS-MP-SmoothSync\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.Local.dll
 C:\Users\nwjxz\Documents\workspace\E2-KS-MP-SmoothSync\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.Local.pdb
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\server\KSServerRuntime\KSServerRuntime.Local.dll
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\server\KSServerRuntime\KSServerRuntime.Local.pdb
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.csproj.AssemblyReference.cache
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.csproj.CoreCompileInputs.cache
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\intermediate\LocalRelease\KSServer.8C2C61C2.Up2Date
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.Local.dll
+C:\Users\nwjxz\Documents\workspace\E2_KS_MP\KinematicSoup\Reactor\intermediate\LocalRelease\KSServerRuntime.Local.pdb

@@ -1,0 +1,69 @@
+# =============== #
+# Unity 核心忽略项 #
+# =============== #
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/KinematicSoup
+/[Uu]ser[Ss]ettings/
+/UserSettings/
+/usersettings/
+/userSettings/
+/[Mm]emoryCaptures/
+/.assetSerializationCache/
+
+# 项目设置（通常需要保留，但排除编辑器缓存）
+!/[Pp]rojectSettings/
+/[Pp]rojectSettings/EditorBuildSettings.asset  # 排除自动生成的构建配置
+
+# ======================== #
+# 操作系统 & 编辑器生成文件 #
+# ======================== #
+*.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# ========================== #
+# IDE 和开发工具相关文件 #
+# ========================== #
+.vs/
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.userprefs
+*.suo
+*.pidb
+*.opendb
+*.VC.db
+
+# ================= #
+# 构建输出和包文件 #
+# ================= #
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.pdb
+*.ilk
+*.dll
+
+# ======================= #
+# 特殊文件处理规则 #
+# ======================= #
+# 保留 Assets/ 和 Packages/ 下的 .meta 文件
+!*/[Aa]ssets/**/*.meta
+!*/[Pp]ackages/**/*.meta
+
+# 排除所有其他 .meta 文件
+*.meta
+
+# 排除自动生成的程序集文件
+**/Assembly-CSharp-Editor.csproj
+**/Assembly-CSharp.csproj
+KinematicSoup
