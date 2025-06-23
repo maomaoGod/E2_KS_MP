@@ -47,7 +47,7 @@ namespace E2MultiPlayer
             holsterBack1 = m_PlayerControl.FindGrandChild("Holster Back 1");
             holsterBack2 = m_PlayerControl.FindGrandChild("Holster Back 2");
             leftHand = m_PlayerControl.FindGrandChild("CC_Base_L_Hand");
-            rightHand = m_PlayerControl.FindGrandChild("CC_Base_R_Hand");
+            rightHand = m_PlayerControl.FindGrandChild("R_R Hand");
         }
 
         void RegisterWeaponEvents()
@@ -129,7 +129,7 @@ namespace E2MultiPlayer
 
             var sword = GameObject.Find("Sword Collectable");
             
-            spawnedWeapon = GameObject.Instantiate(sword, weaponParent);
+            spawnedWeapon = GameObject.Instantiate(sword, rightHand);
             //spawnedWeapon.transform.localPosition = m_WeaponData.weapons[weaponIndex].holsterOffset.position;
             //spawnedWeapon.transform.localRotation = m_WeaponData.weapons[weaponIndex].holsterOffset.rotation;
             //spawnedWeapon.transform.localScale = m_WeaponData.weapons[weaponIndex].holsterOffset.scale;
@@ -147,19 +147,20 @@ namespace E2MultiPlayer
         public void EquipWeapon(int previousHolsterIndex, int weaponIndex)
         {
 
+            return;
             Transform spawnedWeapon = null;
 
-            switch (previousHolsterIndex)
-            {
-                case 0:
-                    spawnedWeapon = holsterLeft.GetChild(0); break;
-                case 1:
-                    spawnedWeapon = holsterRight.GetChild(0); break;
-                case 2:
-                    spawnedWeapon = holsterBack1.GetChild(0); break;
-                case 3:
-                    spawnedWeapon = holsterBack2.GetChild(0); break;
-            }
+            // switch (previousHolsterIndex)
+            // {
+            //     case 0:
+            //         spawnedWeapon = holsterLeft.GetChild(0); break;
+            //     case 1:
+            //         spawnedWeapon = holsterRight.GetChild(0); break;
+            //     case 2:
+            //         spawnedWeapon = holsterBack1.GetChild(0); break;
+            //     case 3:
+            //         spawnedWeapon = holsterBack2.GetChild(0); break;
+            // }
 
             if (m_WeaponData.weapons[weaponIndex].leftHand)
             {
